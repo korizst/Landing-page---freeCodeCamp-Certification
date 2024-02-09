@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #28247B;
+} 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    color: white;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header-img {
+    display: block;
+    height: 4rem;
+}
+
+.logo {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    padding: 1.2rem;
+}
+
+#nav-bar {
+    grid-column: 4 / 5;
+    padding: 2rem 0;
+}
+
+.nav-list-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    float: left;
+    font-size: 2rem;
+    padding: 1.2rem;
+}
+
+.nav-link a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 15rem;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr) 1fr;
+    justify-items: center;
+    gap: 5rem;
+    margin: 8rem 0;
+}
+
+.feature-box-logo {
+    height: 8rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.feature-box-1 {
+    grid-column: 2 / 3;
+}
+
+.feature-box h2 {
+    text-align: center;
+    font-size: 3.3rem;
+    margin: 2rem 0;
+    color: var(--primary-color);
+}
+
+.feature-box p {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+#how_it_works {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+#video {
+    max-width: 50rem;
+    width: 100%;
+    height: 30rem;
+}
+
+#pricing {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr) 1fr;
+    margin-bottom: 8rem;
+}
+
+.pricing-box-1,
+.pricing-box-2,
+.pricing-box-3 {
+    padding: 2.5rem;
+}
+
+.pricing-box-2 {
+    color: var(--primary-color);
+}
+
+.pricing-box-1,
+.pricing-box-3 {
+    background: var(--primary-color);
+    color: white;
+}
+
+.pricing-box-1 {
+    grid-column: 2 / 3;
+}
+
+.pricing-box-heading {
+    text-align: center;
+    font-size: 3.3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.pricing-box-subheading {
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-box-description {
+    font-size: 2rem;
+}
+
+#sign_up {
+    margin-bottom: 8rem;
+}
+
+label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    margin: 2rem auto;
+}
+
+#email {
+    width: 40rem;
+    padding: .5rem .1rem;
+}
+
+.submit-button {
+    border: none;
+    color: white;
+    background: var(--primary-color);
+    font-size: 2rem;
+    padding: 1.2rem 6rem;
+    border-radius: .5rem;
+}
+
+.submit-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    width: 80vw;
+    margin: 0 auto;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.6rem;
+    padding: 3rem;
+}
+
+.footer-list-item {
+    list-style-type: none;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding-left: 1.2rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    main {
+        margin-top: 25rem;
+    }
+
+    a, p {
+        font-size: 1.3rem;
+    }
+}
